@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs', {title: 'Home'}) %>
+
+<body>
+  <h1>Halaman home</h1>
+  <a href="/add-name"> Add new name</a>
+  <ul>
+    <% data.forEach(item => { %>
+      <li><span><%= item.first_name %></span> <span><%= item.last_name %></span></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
